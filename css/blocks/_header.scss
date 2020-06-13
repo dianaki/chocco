@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 44px;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  margin-right: 27px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contacts__icon{
+  margin-right: 6px;
+}
+.contacts__text {
+  font-size: 24px;
+}

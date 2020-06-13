@@ -1,0 +1,8 @@
+.benefits-section {
+  position: relative;
+  background: url("/images/grey-leaf.png") left top 57% no-repeat; }
+  .benefits-section:before {
+    content: url("/images/raspberry.png");
+    position: absolute;
+    bottom: -80px;
+    left: 0; }

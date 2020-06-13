@@ -1,0 +1,41 @@
+.btn {
+  font-size: 19px;
+  line-height: 1;
+  border-radius: 26px;
+  padding: 18px 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  &--white {
+   background-color: #ffffff;
+   color: #365a49;
+    
+   &:hover {
+      background-color: #365a49;
+      color: #ffffff;
+   }
+  }
+
+  &--green {
+    background-color: #365a49;
+    color:#ffffff;
+
+   &:hover {
+    background-color: #ffffff;
+    color: #365a49;
+   }
+  }
+
+  &--transparent {
+    background: transparent;
+    color: black;
+    text-transform: none;
+
+    &:hover {
+      color: #365a49;
+    }
+  }
+}
