@@ -1,17 +1,17 @@
 .delivery-section {
-  background: url("./images/pattern.png")center center no-repeat;
+  background: url("../../images/pattern.png")center center no-repeat;
   background-size: cover;
   position: relative;
 
   &::before {
-    content: url("./images/one-leaf.png");
+    content: url("../../images/one-leaf.png");
     position: absolute;
     right: 0;
     bottom: 60px;
   }
   
   &:after {
-    content: url("./images/one-berry.png");
+    content: url("../../images/one-berry.png");
     position: absolute;
     left: 20px;
     bottom: 60px;
