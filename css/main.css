@@ -368,7 +368,7 @@ img {
   max-width: 100%; }
 
 .hero {
-  background: url("../../images/big-leaf.png") right bottom no-repeat;
+  background: url("../images/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
@@ -376,12 +376,12 @@ img {
   padding: 24px 0 45px;
   position: relative; }
   .hero:before {
-    content: url("../../images/little-leaf.png");
+    content: url("../images/little-leaf.png");
     position: absolute;
     bottom: -40px;
     left: 2%; }
   .hero::after {
-    content: url("../../images/berries.png");
+    content: url("../images/berries.png");
     position: absolute;
     bottom: -40px;
     right: 0; }
@@ -398,7 +398,7 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%;
-  background: url("../../images/chocolates.png") right center/50% auto no-repeat; }
+  background: url("../images/chocolates.png") right center/50% auto no-repeat; }
 
 .hero__text-section {
   width: 40%; }
@@ -555,7 +555,7 @@ img {
   padding: 0 3%;
   position: relative; }
   .benefits__item::before {
-    content: url("../../images/separator.png");
+    content: url("../images/separator.png");
     position: absolute;
     top: 30px;
     right: 0;
@@ -605,9 +605,9 @@ img {
 
 .benefits-section {
   position: relative;
-  background: url("../../images/grey-leaf.png") left top 57% no-repeat; }
+  background: url("../images/grey-leaf.png") left top 57% no-repeat; }
   .benefits-section:before {
-    content: url("../../images/raspberry.png");
+    content: url("../images/raspberry.png");
     position: absolute;
     bottom: -80px;
     left: 0; }
@@ -615,18 +615,18 @@ img {
 .reviews-section {
   position: relative; }
   .reviews-section::before {
-    content: url("../../images/bw-leaf.png");
+    content: url("../images/bw-leaf.png");
     position: absolute;
     left: 0;
     bottom: -235px; }
   .reviews-section:after {
-    content: url("../../images/strawberry.png");
+    content: url("../images/strawberry.png");
     right: 0;
     top: 18px;
     position: absolute; }
 
 .reviews__display {
-  background: url("../../images/bw-berry.png");
+  background: url("../images/bw-berry.png");
   padding: 50px 45px 34px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -760,16 +760,16 @@ img {
   flex-wrap: wrap; }
 
 .delivery-section {
-  background: url("../../images/pattern.png") center center no-repeat;
+  background: url("../images/pattern.png") center center no-repeat;
   background-size: cover;
   position: relative; }
   .delivery-section::before {
-    content: url("../../images/one-leaf.png");
+    content: url("../images/one-leaf.png");
     position: absolute;
     right: 0;
     bottom: 60px; }
   .delivery-section:after {
-    content: url("../../images/one-berry.png");
+    content: url("../images/one-berry.png");
     position: absolute;
     left: 20px;
     bottom: 60px; }
@@ -786,7 +786,7 @@ img {
   .radio--checkbox .radio__visible {
     border-radius: 0; }
     .radio--checkbox .radio__visible:before {
-      background: url("../../images/tick.png") center center no-repeat; }
+      background: url("../images/tick.png") center center no-repeat; }
 
 .radio__elem {
   display: none; }
