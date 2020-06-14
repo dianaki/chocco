@@ -368,20 +368,18 @@ img {
   display: block;
   max-width: 100%; }
 
-.hero {
+.hero-section {
   background: url("../images/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
-  min-height: 650px;
   color: #ffffff;
   padding: 25px 0 45px;
   position: relative; }
-  .hero:before {
+  .hero-section:before {
     content: url("../images/little-leaf.png");
     position: absolute;
     bottom: -40px;
     left: 2%; }
-  .hero::after {
+  .hero-section::after {
     content: url("../images/berries.png");
     position: absolute;
     bottom: -40px;
@@ -423,9 +421,6 @@ img {
   -ms-flex-align: center;
   align-items: center; }
 
-.header__logo {
-  margin-right: 44px; }
-
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,18 +442,23 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: auto; }
-
-.contacts__icon {
-  margin-right: 6px; }
-
-.contacts__text {
+  margin-left: auto;
   font-size: 24px; }
+  .contacts::before {
+    content: "";
+    display: block;
+    background: url("../images/phone.png") center center/cover no-repeat;
+    height: 11px;
+    width: 12px;
+    margin-right: 6px; }
+
+.logo {
+  margin-right: 44px; }
 
 .features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .features__item {
   margin-right: 50px; }
@@ -554,8 +554,8 @@ img {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0 3%;
-  position: relative; }
+  position: relative;
+  padding-right: 70px; }
   .benefits__item::before {
     content: url("../images/separator.png");
     position: absolute;
@@ -564,8 +564,6 @@ img {
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%); }
-  .benefits__item:first-child {
-    padding-left: 0; }
   .benefits__item:last-child {
     padding-right: 0; }
     .benefits__item:last-child::before {
@@ -588,7 +586,6 @@ img {
 
 .benefit__icon {
   width: 75px;
-  height: 69px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -675,7 +672,7 @@ img {
   color: black; }
 
 .reviews__text {
-  width: 76%;
+  padding-right: 140px;
   margin-bottom: 19px; }
 
 .reviews__author {
@@ -698,16 +695,8 @@ img {
   border-radius: 50%;
   overflow: hidden;
   position: relative; }
-  .interactive-avatar--active {
+  .interactive-avatar--active, .interactive-avatar:hover {
     border-color: #0f5a47; }
-
-.interactive-avatar__link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block; }
 
 .interactive-avatar__img {
   display: block;
@@ -734,6 +723,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 9px; }
+  .form__row:last-child {
+    margin-bottom: 0; }
 
 .form__block {
   -webkit-box-flex: 1;
@@ -827,7 +818,9 @@ img {
 
 .fixed-menu__item {
   margin-bottom: 5px; }
-  .fixed-menu__item--active .fixed-menu__link {
+  .fixed-menu__item:last-child {
+    margin-bottom: 0; }
+  .fixed-menu__item--active .fixed-menu__link, .fixed-menu__item:hover .fixed-menu__link {
     border-color: #ffffff; }
 
 .fixed-menu__link {

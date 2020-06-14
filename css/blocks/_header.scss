@@ -2,9 +2,6 @@
   display: flex;
   align-items: center;
 }
-.header__logo {
-  margin-right: 44px;
-}
 .menu__list {
   display: flex;
   align-items: center;
@@ -19,10 +16,14 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-}
-.contacts__icon{
-  margin-right: 6px;
-}
-.contacts__text {
   font-size: 24px;
+
+  &::before {
+    content: "";
+    display: block;
+    background: url("../images/phone.png") center center / cover no-repeat;
+    height: 11px;
+    width: 12px;
+    margin-right: 6px;
+  }
 }

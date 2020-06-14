@@ -3,8 +3,8 @@
 }
 .benefits__item {
   flex: 1;
-  padding: 0 3%;
   position: relative;
+  padding-right: 70px;
 
   &::before {
     content: url("../images/separator.png");
@@ -12,10 +12,6 @@
     top: 50px;
     right: 0;
     transform: translateX(50%);
-  }
-
-  &:first-child {
-    padding-left: 0;
   }
 
   &:last-child {
