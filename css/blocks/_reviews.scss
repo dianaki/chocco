@@ -5,41 +5,41 @@
     content: url("../images/bw-leaf.png");
     position: absolute;
     left: 0;
-    bottom: -235px;
+    bottom: rem(-235px);
   }
   &:after {
     content: url("../images/strawberry.png");
     right: 0;
-    top: 18px;
+    top: rem(18px);
     position: absolute;
   }
 }
 .reviews__display {
   background: url("../images/bw-berry.png");
-  padding: 50px 45px 34px;
-  margin-bottom: 20px;
+  padding: rem(50px) rem(45px) rem(34px);
+  margin-bottom: rem(20px);
   overflow: hidden;
   position: relative;
   
   &:before {
     content:"";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: white; 
     border-radius: 50%;  
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }
 .reviews__display-inner {
   display: flex;
 }
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
 }
 .reviews__avatar-img {
   object-fit: cover;
@@ -48,21 +48,21 @@
 }
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: rem(20px);
 }
 .reviews__title {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: 17px;
+  margin-bottom: rem(17px);
   color: black;
 }
 .reviews__text {
-  padding-right: 140px;
-  margin-bottom: 19px;
+  padding-right: rem(140px);
+  margin-bottom: rem(19px);
 }
 .reviews__author {
   color: black;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 500;
 }
 .reviews__switcher {

@@ -1,9 +1,16 @@
+$base-font-size: 16px;
+
+@function rem($size) {
+  @return $size / $base-font-size * 1rem;
+}
+
 html, body {
   height: 100%;
+  font-size: ($base-font-size / 16px) * 1rem;
 }
 body {
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: normal;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -14,13 +21,13 @@ body {
 .wrapper {
   min-height: 100%;
   width: 100%;
-  min-width: 960px;
+  min-width: rem(960px);
   overflow-x: hidden;
   position: relative;
 }
 .container {
   margin: 0 auto;
-  width: 940px;
+  width: rem(940px);
   position: relative;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -52,6 +59,7 @@ footer {
 }
 * {
   box-sizing: border-box;
+
 }
 img {
   display: block;

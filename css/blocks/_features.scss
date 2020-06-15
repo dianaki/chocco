@@ -2,9 +2,9 @@
   display: inline-flex;
 }
 .features__item {
-  margin-right: 50px;
+  margin-right: rem(50px);
 
     &:last-child {
-  margin-right: 0px;
+  margin-right: 0;
   }
 }

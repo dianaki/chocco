@@ -2,20 +2,20 @@
   background:url("../images/big-leaf.png")right bottom no-repeat;
   background-color: #61c4d9;
   color: #ffffff;
-  padding: 25px 0 45px;
+  padding: rem(25px) 0 rem(45px);
   position: relative;
 
   &:before {
     content: url("../images/little-leaf.png");
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     left: 2%;
   }
 
   &::after {
     content: url("../images/berries.png");
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     right: 0;
   }
 }
@@ -30,13 +30,13 @@
   width: 40%;
 }
 .hero__title {
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 }
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 28px;
+  font-size: rem(21px);
+  margin-bottom: rem(28px);
 }

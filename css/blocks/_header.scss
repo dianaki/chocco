@@ -7,7 +7,7 @@
   align-items: center;
 }
 .menu__item {
-  margin-right: 27px;
+  margin-right: rem(27px);
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -16,14 +16,14 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  font-size: 24px;
+  font-size: rem(24px);
 
   &::before {
     content: "";
     display: block;
     background: url("../images/phone.png") center center / cover no-repeat;
-    height: 11px;
-    width: 12px;
-    margin-right: 6px;
+    height: rem(11px);
+    width: rem(12px);
+    margin-right: rem(6px);
   }
 }

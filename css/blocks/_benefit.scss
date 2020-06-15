@@ -2,28 +2,28 @@
   text-align: center;
 }
 .benefit__image {
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
 }
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   position: relative;
   background-color: #f2f5f4;
   border-radius: 50%;
   overflow: hidden;
 }
 .benefit__icon {
-  width: 75px;
+  width: rem(75px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .benefit__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: rem(12px);
   color: black;
 }
 .benefit__desc {

@@ -7,13 +7,13 @@
     content: url("../images/one-leaf.png");
     position: absolute;
     right: 0;
-    bottom: 60px;
+    bottom: rem(60px);
   }
   
   &:after {
     content: url("../images/one-berry.png");
     position: absolute;
-    left: 20px;
-    bottom: 60px;
+    left: rem(20px);
+    bottom: rem(60px);
   }
 }
