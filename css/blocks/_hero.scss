@@ -1,9 +1,16 @@
-.hero-section {
+.section.hero-section {
   background:url("../images/big-leaf.png")right bottom no-repeat;
   background-color: #61c4d9;
   color: #ffffff;
   padding: rem(25px) 0 rem(45px);
   position: relative;
+
+  @include tablets {
+    height: 100%;
+    padding-bottom: rem(181px);
+    background-position: right top 20%;
+  }
+
 
   &:before, &:after {
     @include tablets {
@@ -42,12 +49,7 @@
     }
   }
 }
-.hero__icons-section {
 
-  @include tablets {
-    display: none;
-  }
-}
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -71,6 +73,11 @@
   margin-bottom: rem(28px);
 
   @include tablets {
-    padding: 0 24%;
+    padding: 0 26%;
+  }
+}
+.hero__icons-section {
+  @include tablets {
+    display: none;
   }
 }
