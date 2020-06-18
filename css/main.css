@@ -377,26 +377,53 @@ img {
   display: block;
   max-width: 100%; }
 
-.section.hero-section {
+.section {
+  height: 100vh;
+  min-height: 40.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .section--font--color--green {
+    color: #365a49; }
+    .section--font--color--green .section__title {
+      color: inherit; }
+
+.section__title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 3.75rem;
+  text-align: center; }
+
+.hero-section {
   background: url("../images/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
   color: #ffffff;
   padding: 1.5625rem 0 2.8125rem;
   position: relative; }
   @media screen and (max-width: 768px) {
-    .section.hero-section {
+    .hero-section {
       height: 100%;
       padding-bottom: 11.3125rem;
       background-position: right top 20%; } }
   @media screen and (max-width: 768px) {
-    .section.hero-section:before, .section.hero-section:after {
+    .hero-section:before, .hero-section:after {
       display: none; } }
-  .section.hero-section:before {
+  .hero-section:before {
     content: url("../images/little-leaf.png");
     position: absolute;
     bottom: -2.5rem;
     left: 2%; }
-  .section.hero-section::after {
+  .hero-section::after {
     content: url("../images/berries.png");
     position: absolute;
     bottom: -2.5rem;
@@ -469,6 +496,11 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .header {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -564,33 +596,6 @@ img {
     font-weight: normal; }
     .btn--transparent:hover {
       color: #365a49; }
-
-.section {
-  height: 100vh;
-  min-height: 40.625rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .section--font--color--green {
-    color: #365a49; }
-    .section--font--color--green .section__title {
-      color: inherit; }
-
-.section__title {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1;
-  color: black;
-  text-transform: uppercase;
-  margin-bottom: 3.75rem;
-  text-align: center; }
 
 .headline {
   text-align: center;
@@ -872,6 +877,9 @@ img {
   position: fixed;
   top: 30%;
   right: 3%; }
+  @media screen and (max-width: 768px) {
+    .fixed-menu {
+      display: none; } }
 
 .fixed-menu__item {
   margin-bottom: 0.3125rem; }
@@ -970,3 +978,9 @@ img {
   height: 1.4375rem; }
   .social__link--tw:hover {
     background: url("../images/tw-hover.png") center center no-repeat; }
+
+@media screen and (max-width: 768px) {
+  .gamburger {
+    width: 24px;
+    height: 22px;
+    background: url("../images/gamburger.png"); } }
