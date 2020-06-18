@@ -3,11 +3,20 @@
   background-size: cover;
   position: relative;
 
+  @include tablets {
+    height: 100%;
+    padding: rem(186px) 0;
+  }
+
   &::before {
     content: url("../images/one-leaf.png");
     position: absolute;
     right: 0;
     bottom: rem(60px);
+
+    @include tablets {
+      display: none;
+    }
   }
   
   &:after {
@@ -15,5 +24,9 @@
     position: absolute;
     left: rem(20px);
     bottom: rem(60px);
+
+    @include tablets {
+      display: none;
+    }
   }
 }

@@ -453,8 +453,12 @@ img {
       align-items: center;
       text-align: center; }
       .hero__title-section::before {
-        content: url("../images/chocolates-media.png");
-        margin-bottom: 12px; } }
+        content: "";
+        margin-bottom: 12px;
+        background: url("../images/chocolates-media.png") center center no-repeat;
+        width: 19.8125rem;
+        height: 20.625rem;
+        background-size: contain; } }
 
 .hero__container {
   display: -webkit-box;
@@ -486,6 +490,9 @@ img {
   @media screen and (max-width: 768px) {
     .hero__title-desc {
       padding: 0 26%; } }
+  @media screen and (max-width: 480px) {
+    .hero__title-desc {
+      padding: 0 15%; } }
 
 @media screen and (max-width: 768px) {
   .hero__icons-section {
@@ -608,6 +615,9 @@ img {
 
 .headline__subtitle {
   padding: 0 26%; }
+  @media screen and (max-width: 480px) {
+    .headline__subtitle {
+      padding: 0 13%; } }
 
 .benefits {
   display: -webkit-box;
@@ -799,6 +809,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 0 9.5625rem; } }
 
 .form__col {
   -webkit-box-flex: 1;
@@ -807,6 +824,9 @@ img {
   margin-right: 1.25rem; }
   .form__col:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .form__col {
+      margin-right: 0; } }
 
 .form__row {
   display: -webkit-box;
@@ -826,7 +846,7 @@ img {
 
 .form__input {
   width: 100%;
-  padding: 1.125rem 0.6875rem;
+  padding: 0.5rem 0.6875rem;
   border: 0.1875rem solid transparent; }
   .form__input--textarea {
     height: 11.25rem;
@@ -845,20 +865,38 @@ img {
   .form__controls--calling {
     margin-bottom: 2.625rem; }
 
+.form__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 .delivery-section {
   background: url("../images/pattern.png") center center no-repeat;
   background-size: cover;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .delivery-section {
+      height: 100%;
+      padding: 11.625rem 0; } }
   .delivery-section::before {
     content: url("../images/one-leaf.png");
     position: absolute;
     right: 0;
     bottom: 3.75rem; }
+    @media screen and (max-width: 768px) {
+      .delivery-section::before {
+        display: none; } }
   .delivery-section:after {
     content: url("../images/one-berry.png");
     position: absolute;
     left: 1.25rem;
     bottom: 3.75rem; }
+    @media screen and (max-width: 768px) {
+      .delivery-section:after {
+        display: none; } }
 
 .radio {
   display: -webkit-box;

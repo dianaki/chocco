@@ -45,8 +45,12 @@
     text-align: center;
     
     &::before {
-      content: url("../images/chocolates-media.png");
+      content: "";
       margin-bottom: 12px;
+      background: url("../images/chocolates-media.png") center center no-repeat;
+      width: rem(317px);
+      height: rem(330px);
+      background-size: contain;
     }
   }
 }
@@ -75,6 +79,10 @@
 
   @include tablets {
     padding: 0 26%;
+  }
+
+  @include phones {
+    padding: 0 15%;
   }
 }
 .hero__icons-section {

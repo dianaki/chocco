@@ -1,11 +1,20 @@
 .form {
   display: flex;
+  
+  @include tablets {
+    flex-direction: column;
+    padding: 0 rem(153px);
+  }
 }
 .form__col {
   flex: 1;
   margin-right: rem(20px);
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
     margin-right: 0;
   }
 }
@@ -27,7 +36,7 @@
 }
 .form__input {
   width: 100%;
-  padding: rem(18px) rem(11px);
+  padding: rem(8px) rem(11px);
   border: rem(3px) solid transparent;
 
   &--textarea {
@@ -47,4 +56,8 @@
   &--calling {
     margin-bottom: rem(42px);
   }
+}
+.form__btns {
+  display: flex;
+  justify-content: center;
 }
