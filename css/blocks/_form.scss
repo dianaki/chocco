@@ -5,6 +5,10 @@
     flex-direction: column;
     padding: 0 rem(153px);
   }
+
+  @include phones {
+    padding: 0 rem(10px);
+  }
 }
 .form__col {
   flex: 1;
@@ -53,6 +57,9 @@
   flex-wrap: wrap;
   margin-bottom: rem(7px);
 
+    @include phones {
+      justify-content: center;
+    }
   &--calling {
     margin-bottom: rem(42px);
   }

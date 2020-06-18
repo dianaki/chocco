@@ -6,19 +6,15 @@
   padding: rem(21px) 0;
   background: #ffffff;
   font-size: rem(21px);
-
-    .contacts__addres {
-      color: black;
-    }
-
-      .contacts__link {
-        color: #365a49;
-      }
 }
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
   

@@ -60,6 +60,10 @@
 .reviews__content {
   flex: 1;
   margin-left: rem(20px);
+  
+  @include tablets {
+    margin-left: 0;
+  }
 }
 .reviews__title {
   font-size: rem(30px);
@@ -72,7 +76,7 @@
   margin-bottom: rem(19px);
 
   @include tablets {
-    padding: 0 rem(40px);
+    padding: 0 rem(33px);
   }
 }
 .reviews__author {

@@ -1,6 +1,11 @@
 .benefits-section {
   position: relative;
   background: url("../images/grey-leaf.png") left top 57% no-repeat;
+  height: 100%;
+
+  @include phones {
+    background: none;
+  }
 
   @include tablets {
     background-position: left top ;
@@ -14,6 +19,9 @@
 
     @include tablets {
       bottom: rem(-160px);
+    }
+    @include phones {
+      display: none;
     }
   }
 }
