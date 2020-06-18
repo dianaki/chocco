@@ -358,7 +358,8 @@ ul li {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  white-space: nowrap; }
 
 p {
   padding: 0;
@@ -452,7 +453,8 @@ img {
       align-items: center;
       text-align: center; }
       .hero__title-section::before {
-        content: url("../images/chocolates-media.png"); } }
+        content: url("../images/chocolates-media.png");
+        margin-bottom: 12px; } }
 
 .hero__container {
   display: -webkit-box;
@@ -626,6 +628,9 @@ img {
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%); }
+    @media screen and (max-width: 768px) {
+      .benefits__item::before {
+        display: none; } }
   .benefits__item:last-child {
     padding-right: 0; }
     .benefits__item:last-child::before {
@@ -667,11 +672,17 @@ img {
 .benefits-section {
   position: relative;
   background: url("../images/grey-leaf.png") left top 57% no-repeat; }
+  @media screen and (max-width: 768px) {
+    .benefits-section {
+      background-position: left top; } }
   .benefits-section:before {
     content: url("../images/raspberry.png");
     position: absolute;
     bottom: -5rem;
     left: 0; }
+    @media screen and (max-width: 768px) {
+      .benefits-section:before {
+        bottom: -10rem; } }
 
 .reviews-section {
   position: relative; }
@@ -687,7 +698,7 @@ img {
     position: absolute; }
 
 .reviews__display {
-  background: url("../images/bw-berry.png");
+  background: url("../images/bw-berry.png") center right no-repeat;
   padding: 3.125rem 2.8125rem 2.125rem;
   margin-bottom: 1.25rem;
   overflow: hidden;
@@ -710,10 +721,24 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .reviews__display-inner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .reviews__avatar {
   width: 15.875rem;
   height: 16.25rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__avatar {
+      width: 8.1875rem;
+      height: 8.25rem; } }
 
 .reviews__avatar-img {
   -o-object-fit: cover;
@@ -736,6 +761,9 @@ img {
 .reviews__text {
   padding-right: 8.75rem;
   margin-bottom: 1.1875rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__text {
+      padding: 0 2.5rem; } }
 
 .reviews__author {
   color: black;

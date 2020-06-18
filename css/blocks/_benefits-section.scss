@@ -1,11 +1,19 @@
 .benefits-section {
   position: relative;
   background: url("../images/grey-leaf.png") left top 57% no-repeat;
+
+  @include tablets {
+    background-position: left top ;
+  }
   
   &:before {
     content: url("../images/raspberry.png");
     position: absolute;
     bottom: rem(-80px);
     left: 0;
+
+    @include tablets {
+      bottom: rem(-160px);
+    }
   }
 }

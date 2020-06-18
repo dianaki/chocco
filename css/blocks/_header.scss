@@ -1,9 +1,9 @@
 .header {
   display: flex;
   align-items: center;
-  
+
   @include tablets {
-    justify-content: space-between;;
+    justify-content: space-between;
   }
 }
 .menu {
