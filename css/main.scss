@@ -1,5 +1,9 @@
+$base-font-size: 16px;
+$container-width: 940px;
+
 @import "./normalize.scss";
 @import "https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap";
+@import "_media.scss";
 @import "_layout.scss";
 @import "blocks/_hero.scss";
 @import "blocks/_header.scss";
@@ -18,3 +22,6 @@
 @import "blocks/_delivery.scss";
 @import "blocks/_radio.scss";
 @import "blocks/_fixed-menu.scss";
+@import "blocks/_map.section.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_socials.scss";

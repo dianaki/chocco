@@ -1,16 +1,20 @@
-$base-font-size: 16px;
+html {
+  font-size: $base-font-size;
+    
+  @include tablets {
+    font-size: $base-font-size - 1px;
+  }
 
-@function rem($size) {
-  @return $size / $base-font-size * 1rem;
+  @include phones {
+    font-size: $base-font-size - 2px;
+  }
 }
-
-html, body {
+html, 
+body {
   height: 100%;
-  font-size: ($base-font-size / 16px) * 1rem;
 }
 body {
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
-  font-size: rem(18px);
   font-weight: normal;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -21,13 +25,13 @@ body {
 .wrapper {
   min-height: 100%;
   width: 100%;
-  min-width: rem(960px);
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 .container {
   margin: 0 auto;
-  width: rem(940px);
+  width: 95%;
+  max-width: $container-width;
   position: relative;
 }
 h1, h2, h3, h4, h5, h6 {

@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
 }
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
 .menu__list {
   display: flex;
   align-items: center;
@@ -12,13 +17,18 @@
 .menu__item:last-child {
   margin-right: 0;
 }
-.contacts {
+.contacts-phone.header__contacts-phone {
+  @include tablets {
+    display: none;
+  }
+}
+.contacts-phone {
   display: flex;
   align-items: center;
   margin-left: auto;
   font-size: rem(24px);
 
-  &::before {
+    &::before {
     content: "";
     display: block;
     background: url("../images/phone.png") center center / cover no-repeat;

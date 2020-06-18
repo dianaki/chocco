@@ -5,6 +5,12 @@
   padding: rem(25px) 0 rem(45px);
   position: relative;
 
+  &:before, &:after {
+    @include tablets {
+    display: none;
+    }
+  }
+
   &:before {
     content: url("../images/little-leaf.png");
     position: absolute;
@@ -19,17 +25,41 @@
     right: 0;
   }
 }
+.hero__title-section {
+  width: 40%;
+
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    &::before {
+      content: url("../images/chocolates-media.png");
+    }
+  }
+}
+.hero__icons-section {
+
+  @include tablets {
+    display: none;
+  }
+}
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   background: url("../images/chocolates.png") right center / 50% auto no-repeat,;
+
+  @include tablets {
+    background: none;
+  }
 }
-.hero__text-section {
-  width: 40%;
-}
-.hero__title {
+.hero__main-title {
   font-size: rem(48px);
   line-height: 1.2;
   text-transform: uppercase;
@@ -39,4 +69,8 @@
 .hero__title-desc {
   font-size: rem(21px);
   margin-bottom: rem(28px);
+
+  @include tablets {
+    padding: 0 24%;
+  }
 }

@@ -1,0 +1,25 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: rem(21px) 0;
+  background: #ffffff;
+  font-size: rem(21px);
+
+    .contacts__addres {
+      color: black;
+    }
+
+      .contacts__link {
+        color: #365a49;
+      }
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  
+  
