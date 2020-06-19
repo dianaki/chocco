@@ -9,6 +9,10 @@
   outline: none;
   border: none;
 
+  @include phones {
+    padding: rem(25px) rem(43px);
+  }
+
   &--white {
    background-color: #ffffff;
    color: #365a49;

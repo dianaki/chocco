@@ -15,7 +15,7 @@
   }
 }
 .reviews__display {
-  background: url("../images/bw-berry.png") center right no-repeat;
+  background: url("../images/bw-berry.png") right top no-repeat;
   padding: rem(50px) rem(45px) rem(34px);
   margin-bottom: rem(15px);
   overflow: hidden;
@@ -51,6 +51,12 @@
     width: rem(131px);
     height: rem(132px);
   }
+
+  @include phones {
+    margin-bottom: 0;
+    width: rem(121px);
+    height: rem(124px);
+  }
 }
 .reviews__avatar-img {
   object-fit: cover;
@@ -64,12 +70,20 @@
   @include tablets {
     margin-left: 0;
   }
+
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 .reviews__title {
   font-size: rem(30px);
   font-weight: bold;
   margin-bottom: rem(17px);
   color: black;
+
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 .reviews__text {
   padding-right: rem(150px);

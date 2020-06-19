@@ -580,7 +580,8 @@ img {
       flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; } }
+      align-items: center;
+      font-size: 1.3125rem; } }
 
 @media screen and (max-width: 768px) {
   .contacts-phone.header__contacts-phone {
@@ -644,6 +645,9 @@ img {
   cursor: pointer;
   outline: none;
   border: none; }
+  @media screen and (max-width: 480px) {
+    .btn {
+      padding: 1.5625rem 2.6875rem; } }
   .btn--white {
     background-color: #ffffff;
     color: #365a49; }
@@ -741,7 +745,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .benefit__text {
-    padding-right: 17%; } }
+    padding-right: 19%; } }
 
 .benefit__image-wrapper {
   display: inline-block;
@@ -805,7 +809,7 @@ img {
     position: absolute; }
 
 .reviews__display {
-  background: url("../images/bw-berry.png") center right no-repeat;
+  background: url("../images/bw-berry.png") right top no-repeat;
   padding: 3.125rem 2.8125rem 2.125rem;
   margin-bottom: 0.9375rem;
   overflow: hidden;
@@ -846,6 +850,11 @@ img {
     .reviews__avatar {
       width: 8.1875rem;
       height: 8.25rem; } }
+  @media screen and (max-width: 480px) {
+    .reviews__avatar {
+      margin-bottom: 0;
+      width: 7.5625rem;
+      height: 7.75rem; } }
 
 .reviews__avatar-img {
   -o-object-fit: cover;
@@ -861,12 +870,18 @@ img {
   @media screen and (max-width: 768px) {
     .reviews__content {
       margin-left: 0; } }
+  @media screen and (max-width: 480px) {
+    .reviews__content {
+      margin-bottom: 0; } }
 
 .reviews__title {
   font-size: 1.875rem;
   font-weight: bold;
   margin-bottom: 1.0625rem;
   color: black; }
+  @media screen and (max-width: 480px) {
+    .reviews__title {
+      margin-bottom: 0; } }
 
 .reviews__text {
   padding-right: 9.375rem;
