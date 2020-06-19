@@ -13,15 +13,17 @@
   @include phones {
     display: flex;
     margin-bottom: rem(18px);
-    padding-right: 0;;
+    padding-right: 0;
   }
 
   &::before {
-    content: url("../images/separator.png");
+    content: "";
     position: absolute;
-    top: rem(50px);
+    background: url("../images/separator.png")center center no-repeat;
+    width: rem(67px);
+    height: rem(21px);
+    top: 19%;
     right: 0;
-    transform: translateX(50%);
 
     @include tablets {
       display: none;

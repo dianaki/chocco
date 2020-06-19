@@ -64,6 +64,11 @@
     margin-bottom: rem(42px);
   }
 }
+.radio {
+  &:last-child {
+    margin-right: 0;
+  }
+}
 .form__btns {
   display: flex;
   justify-content: center;

@@ -700,13 +700,13 @@ img {
       margin-bottom: 1.125rem;
       padding-right: 0; } }
   .benefits__item::before {
-    content: url("../images/separator.png");
+    content: "";
     position: absolute;
-    top: 3.125rem;
-    right: 0;
-    -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(50%); }
+    background: url("../images/separator.png") center center no-repeat;
+    width: 4.1875rem;
+    height: 1.3125rem;
+    top: 19%;
+    right: 0; }
     @media screen and (max-width: 768px) {
       .benefits__item::before {
         display: none; } }
@@ -966,6 +966,9 @@ img {
   .form__controls--calling {
     margin-bottom: 2.625rem; }
 
+.radio:last-child {
+  margin-right: 0; }
+
 .form__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1078,7 +1081,8 @@ img {
 
 .map-section {
   position: relative;
-  background-color: #ccc; }
+  background: url("../images/map.png") center center no-repeat;
+  background-size: cover; }
 
 .footer {
   position: absolute;
