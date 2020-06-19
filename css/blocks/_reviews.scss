@@ -1,5 +1,7 @@
 .reviews-section {
   position: relative;
+  height: 100%;
+  padding: rem(90px) 0;
   
   &::before {
     content: url("../images/bw-leaf.png");
@@ -20,7 +22,7 @@
   margin-bottom: rem(15px);
   overflow: hidden;
   position: relative;
-  
+
   &:before {
     content:"";
     display: block;
@@ -91,6 +93,11 @@
 
   @include tablets {
     padding: 0 rem(40px);
+  }
+
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(23px);
   }
 }
 .reviews__author {
