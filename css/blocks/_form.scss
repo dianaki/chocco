@@ -20,6 +20,7 @@
 
   @include tablets {
     margin-right: 0;
+    margin-bottom: rem(15px);
   }
 }
 .form__row {
@@ -29,6 +30,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+  
+  @include tablets {
+    margin-bottom: rem(10px);
+  }
 }
 .form__block {
   flex: 1;
@@ -36,6 +41,9 @@
 
   &:last-child {
     margin-right: 0;
+  }
+  @include tablets {
+    margin-right: rem(15px);
   }
 }
 .form__input {
@@ -51,6 +59,14 @@
     border-color: #dee2bd;
     outline: none;
   }
+
+  @include tablets {
+    padding: rem(6px) rem(5px);
+
+    &--textarea {
+      height: rem(80px);
+    }
+  }
 }
 .form__controls {
   display: flex;
@@ -62,9 +78,17 @@
     }
   &--calling {
     margin-bottom: rem(42px);
+
+    @include tablets {
+      margin-bottom: rem(35px);
+    }
   }
 }
 
 .form__btns {
   display: flex;
+
+  @include tablets {
+    justify-content: center;
+  }
 }

@@ -10,6 +10,10 @@
   position: relative;
   padding-right: rem(75px);
 
+  @include tablets {
+    padding-right: rem(80px);
+  }
+
   @include phones {
     display: flex;
     margin-bottom: rem(18px);
