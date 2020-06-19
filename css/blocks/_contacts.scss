@@ -1,13 +1,16 @@
-.contacts{
+.contacts {
+  font-style: normal;
+
+  &__addres{
+    color: #060606;
+  }
+
   @include phones {
   margin-bottom: rem(10px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
-  &__addres{
-    color: #060606;
-  }
+  } 
 }
 .contacts-phone.header__contacts-phone {
   @include tablets {
@@ -17,6 +20,7 @@
 .contacts-phone.footer__contacts-phone {
   color: #365a49;
   margin-left: 0;
+  font-size: rem(21px);
 }
 .contacts-phone {
   display: flex;

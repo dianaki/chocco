@@ -17,7 +17,7 @@
 .reviews__display {
   background: url("../images/bw-berry.png") center right no-repeat;
   padding: rem(50px) rem(45px) rem(34px);
-  margin-bottom: rem(20px);
+  margin-bottom: rem(15px);
   overflow: hidden;
   position: relative;
   
@@ -59,7 +59,7 @@
 }
 .reviews__content {
   flex: 1;
-  margin-left: rem(20px);
+  margin-left: rem(15px);
   
   @include tablets {
     margin-left: 0;
@@ -72,8 +72,8 @@
   color: black;
 }
 .reviews__text {
-  padding-right: rem(140px);
-  margin-bottom: rem(19px);
+  padding-right: rem(150px);
+  margin-bottom: rem(30px);
 
   @include tablets {
     padding: 0 rem(33px);

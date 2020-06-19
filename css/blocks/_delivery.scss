@@ -4,6 +4,7 @@
   position: relative;
 
   @include tablets {
+    height: 100%;
     padding: rem(186px) 0;
   }
 

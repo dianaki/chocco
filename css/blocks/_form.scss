@@ -24,7 +24,7 @@
 }
 .form__row {
   display: flex;
-  margin-bottom: rem(9px);
+  margin-bottom: rem(20px);
 
   &:last-child {
     margin-bottom: 0;
@@ -40,7 +40,7 @@
 }
 .form__input {
   width: 100%;
-  padding: rem(8px) rem(11px);
+  padding: rem(18px) rem(11px);
   border: rem(3px) solid transparent;
 
   &--textarea {
@@ -55,7 +55,7 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: rem(7px);
+  margin-bottom: rem(10px);
 
     @include phones {
       justify-content: center;
@@ -64,12 +64,7 @@
     margin-bottom: rem(42px);
   }
 }
-.radio {
-  &:last-child {
-    margin-right: 0;
-  }
-}
+
 .form__btns {
   display: flex;
-  justify-content: center;
 }

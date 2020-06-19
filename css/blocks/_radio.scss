@@ -2,8 +2,8 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: rem(23px);
-
+  margin-right: rem(40px);
+  
   &--checkbox {
     .radio__visible {
       border-radius: 0;
@@ -13,6 +13,9 @@
         }
     }
   }
+  &:last-child {
+    margin-right: 0;
+    }
 }
 .radio__elem {
   display: none;
