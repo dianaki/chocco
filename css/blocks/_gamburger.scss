@@ -1,8 +1,8 @@
-.gamburger {
- @include tablets {
-  width: 24px;
-  height: 22px;
-  background: url("../images/gamburger.png");
- }
-  
+.gamburger-icon {
+
+  @include tablets {
+    width: rem(24px);
+    height: rem(22px);
+    fill: #ffffff;
+  } 
 }

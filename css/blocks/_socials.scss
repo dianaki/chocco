@@ -8,16 +8,13 @@
       margin-right: 0;
     }
 }
-@each $social in(vk, fb, inst, tw) {
- .social__link--#{$social} {
-    background: url("../images/#{$social}.png") center center no-repeat;
-    display: block;
-    width: rem(23px);
-    height: rem(23px);
+.social-icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #B3B3B3;
+  transition: 0.4s;
 
-    &:hover {
-      background: url("../images/#{$social}-hover.png")center center no-repeat;
-    }
+  &:hover {
+    fill: #000000;
   }
-  
 }

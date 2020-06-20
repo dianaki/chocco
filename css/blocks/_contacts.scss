@@ -28,13 +28,14 @@
   align-items: center;
   margin-left: auto;
   font-size: rem(24px);
+}
+.phone-icon {
+  width: rem(12px);
+  height: rem(11px);
+  fill: #ffffff;
+  margin-right: rem(6px);
 
-    &::before {
-    content: "";
-    display: block;
-    background: url("../images/phone.png") center center / cover no-repeat;
-    height: rem(11px);
-    width: rem(12px);
-    margin-right: rem(6px);
+  &--color--green {
+    fill: #365a49;
   }
 }

@@ -21,28 +21,3 @@
 .menu__item:last-child {
   margin-right: 0;
 }
-.contacts{
-  @include phones {
-  margin-bottom: rem(10px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-}
-.contacts-phone.header__contacts-phone {
-  @include tablets {
-    display: none;
-  }
-}
-.contacts-phone {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  font-size: rem(24px);
-}
-.phone-icon {
-  width: rem(12px);
-  height: rem(11px);
-  fill: white;
-  margin-right: rem(6px);
-}
