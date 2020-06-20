@@ -1153,8 +1153,10 @@ img {
   .social-icon:hover {
     fill: #000000; }
 
-@media screen and (max-width: 768px) {
-  .gamburger-icon {
-    width: 1.5rem;
-    height: 1.375rem;
-    fill: #ffffff; } }
+.gamburger-icon {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .gamburger-icon {
+      width: 1.5rem;
+      height: 1.375rem;
+      fill: #ffffff; } }
