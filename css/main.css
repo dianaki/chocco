@@ -416,6 +416,9 @@ img {
       padding-bottom: 11.3125rem;
       background-position: right top 20%;
       height: 100%; } }
+  @media screen and (max-width: 480px) {
+    .hero-section {
+      padding-bottom: 6.375rem; } }
   @media screen and (max-width: 768px) {
     .hero-section:before, .hero-section:after {
       display: none; } }
@@ -1029,7 +1032,6 @@ img {
   position: relative; }
   @media screen and (max-width: 768px) {
     .delivery-section {
-      height: 100%;
       padding: 11.625rem 0; } }
   .delivery-section::before {
     content: url("../images/one-leaf.png");
