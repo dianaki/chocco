@@ -413,9 +413,9 @@ img {
   position: relative; }
   @media screen and (max-width: 768px) {
     .hero-section {
-      height: 100%;
       padding-bottom: 11.3125rem;
-      background-position: right top 20%; } }
+      background-position: right top 20%;
+      height: 100%; } }
   @media screen and (max-width: 768px) {
     .hero-section:before, .hero-section:after {
       display: none; } }
@@ -777,11 +777,11 @@ img {
 .benefits-section {
   position: relative;
   background: url("../images/grey-leaf.png") left top 57% no-repeat;
-  height: 100%;
   padding: 3.4375rem 0; }
   @media screen and (max-width: 480px) {
     .benefits-section {
-      background: none; } }
+      background: none;
+      height: 100%; } }
   @media screen and (max-width: 768px) {
     .benefits-section {
       background-position: left top; } }
@@ -799,8 +799,10 @@ img {
 
 .reviews-section {
   position: relative;
-  height: 100%;
   padding: 5.625rem 0; }
+  @media screen and (max-width: 480px) {
+    .reviews-section {
+      height: 100%; } }
   .reviews-section::before {
     content: url("../images/bw-leaf.png");
     position: absolute;
@@ -809,7 +811,7 @@ img {
   .reviews-section:after {
     content: url("../images/strawberry.png");
     right: 0;
-    top: 1.125rem;
+    top: 0;
     position: absolute; }
 
 .reviews__display {

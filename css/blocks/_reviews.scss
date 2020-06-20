@@ -1,7 +1,10 @@
 .reviews-section {
   position: relative;
-  height: 100%;
   padding: rem(90px) 0;
+
+  @include phones {
+    height: 100%;
+  }
   
   &::before {
     content: url("../images/bw-leaf.png");
@@ -12,7 +15,7 @@
   &:after {
     content: url("../images/strawberry.png");
     right: 0;
-    top: rem(18px);
+    top: 0;
     position: absolute;
   }
 }

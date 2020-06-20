@@ -6,9 +6,9 @@
   position: relative;
 
   @include tablets {
-    height: 100%;
     padding-bottom: rem(181px);
     background-position: right top 20%;
+    height: 100%;
   }
 
 
