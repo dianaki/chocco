@@ -1,10 +1,6 @@
 .reviews-section {
   position: relative;
   padding: rem(90px) 0;
-
-  @include phones {
-    height: 100%;
-  }
   
   &::before {
     content: url("../images/bw-leaf.png");

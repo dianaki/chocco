@@ -758,8 +758,7 @@ img {
   padding: 3.4375rem 0; }
   @media screen and (max-width: 480px) {
     .benefits-section {
-      background: none;
-      height: 100%; } }
+      background: none; } }
   @media screen and (max-width: 768px) {
     .benefits-section {
       background-position: left top; } }
@@ -778,9 +777,6 @@ img {
 .reviews-section {
   position: relative;
   padding: 5.625rem 0; }
-  @media screen and (max-width: 480px) {
-    .reviews-section {
-      height: 100%; } }
   .reviews-section::before {
     content: url("../images/bw-leaf.png");
     position: absolute;
