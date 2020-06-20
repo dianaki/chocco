@@ -1,7 +1,8 @@
 .gamburger-icon {
   display: none;
-  
+
   @include tablets {
+    display: block;
     width: rem(24px);
     height: rem(22px);
     fill: #ffffff;

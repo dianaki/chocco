@@ -1157,6 +1157,7 @@ img {
   display: none; }
   @media screen and (max-width: 768px) {
     .gamburger-icon {
+      display: block;
       width: 1.5rem;
       height: 1.375rem;
       fill: #ffffff; } }
