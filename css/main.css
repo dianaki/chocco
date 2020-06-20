@@ -559,13 +559,12 @@ img {
   align-items: center;
   margin-left: auto;
   font-size: 1.5rem; }
-  .contacts-phone::before {
-    content: "";
-    display: block;
-    background: url("../images/phone.png") center center/cover no-repeat;
-    height: 0.6875rem;
-    width: 0.75rem;
-    margin-right: 0.375rem; }
+
+.phone-icon {
+  width: 0.75rem;
+  height: 0.6875rem;
+  fill: white;
+  margin-right: 0.375rem; }
 
 .contacts {
   font-style: normal; }
@@ -630,9 +629,18 @@ img {
   display: -ms-flexbox;
   display: flex; }
 
-.feature__icon {
-  width: 2.8125rem;
+.feature__pic {
   margin-right: 0.4375rem; }
+
+.feature__icon {
+  stroke: #b0f7ff;
+  height: 2.625rem; }
+  .feature__icon--list {
+    width: 2.75rem; }
+  .feature__icon--car {
+    width: 3.125rem; }
+  .feature__icon--sm {
+    width: 2.625rem; }
 
 .feature__text {
   font-size: 1rem;

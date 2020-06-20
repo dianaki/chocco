@@ -1,9 +1,24 @@
 .feature {
   display: flex;
 }
-.feature__icon {
-  width: rem(45px);
+.feature__pic {
   margin-right: rem(7px);
+}
+.feature__icon {
+  stroke: #b0f7ff;
+  height: rem(42px);
+
+  &--list {
+    width: rem(44px);
+  }
+
+  &--car {
+    width: rem(50px);
+  }
+
+  &--sm {
+    width: rem(42px);
+  }
 }
 .feature__text {
   font-size: rem(16px);
