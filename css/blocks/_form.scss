@@ -22,6 +22,12 @@
     margin-right: 0;
     margin-bottom: rem(15px);
   }
+
+  @include phones {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 .form__row {
   display: flex;

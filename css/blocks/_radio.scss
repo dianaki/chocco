@@ -5,7 +5,7 @@
   margin-right: rem(40px);
 
   @include phones {
-    margin-bottom: rem(10px);
+    margin-bottom: 0;
   }
 
   &--checkbox {

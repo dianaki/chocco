@@ -414,7 +414,7 @@ img {
   @media screen and (max-width: 768px) {
     .hero-section {
       padding-bottom: 11.3125rem;
-      background-position: right top 20%; } }
+      background-position: right bottom 30%; } }
   @media screen and (max-width: 480px) {
     .hero-section {
       padding-bottom: 6.375rem; } }
@@ -687,7 +687,9 @@ img {
       display: -ms-flexbox;
       display: flex;
       margin-bottom: 1.125rem;
-      padding-right: 0; } }
+      padding-right: 0; }
+      .benefits__item:last-child {
+        margin-bottom: 0; } }
   .benefits__item::before {
     content: "";
     position: absolute;
@@ -930,6 +932,9 @@ img {
     .form__col {
       margin-right: 0;
       margin-bottom: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    .form__col:last-child {
+      margin-bottom: 0; } }
 
 .form__row {
   display: -webkit-box;
@@ -1033,7 +1038,7 @@ img {
   margin-right: 2.5rem; }
   @media screen and (max-width: 480px) {
     .radio {
-      margin-bottom: 0.625rem; } }
+      margin-bottom: 0; } }
   .radio--checkbox .radio__visible {
     border-radius: 0; }
     .radio--checkbox .radio__visible:before {

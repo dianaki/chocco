@@ -18,6 +18,10 @@
     display: flex;
     margin-bottom: rem(18px);
     padding-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &::before {
