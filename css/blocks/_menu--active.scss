@@ -1,0 +1,43 @@
+.menu--active {
+  display: none;
+
+  @include tablets {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(48, 52, 52, 0.99);
+
+    .menu__list {
+    flex-direction: column;
+    margin: rem(77px) 0;
+    font-size: rem(32px);
+    color: #ffffff;
+    justify-content: center;
+    }
+
+    .menu__item {
+    margin-right: 0;
+    margin-bottom: rem(32px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    right: 3%;
+    top: rem(35px);
+  }
+  .close-icon {
+    width: rem(24px);
+    height: rem(22px);
+    fill: #ffffff;
+  }
+}
+ 
