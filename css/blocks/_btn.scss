@@ -27,20 +27,20 @@
     background-color: #365a49;
     color:#ffffff;
 
-   &:hover {
-    background-color: #ffffff;
-    color: #365a49;
-   }
+    &:hover {
+      background-color: #467863;
+      color: #ffffff;
+    }
   }
 
   &--transparent {
     background: transparent;
-    color: black;
+    color: #365a49;
     text-transform: none;
     font-weight: normal;
 
     &:hover {
-      color: #365a49;
+      color: black;
     }
   }
 }
