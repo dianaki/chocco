@@ -5,9 +5,13 @@
   &::before {
     content: url("../images/bw-leaf.png");
     position: absolute;
-    left: rem(-30px);
+    left: 0;
     bottom: rem(-100px);
     z-index: 100;
+
+    @include tablets {
+      left: rem(-30px);
+    }
   }
   &:after {
     content: url("../images/strawberry.png");

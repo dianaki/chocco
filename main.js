@@ -1,13 +1,13 @@
 const openMenu = document.querySelector('#openMenu');
-const menuContent = document.querySelector("#menuContent");
+const menuContent = document.querySelector('#menuContent');
 const closeMenu = document.querySelector('#closeMenu');
 
 openMenu.addEventListener('click', function(event){
  event.preventDefault();
- menuContent.style.display = `flex`;
+ menuContent.classList.add('menu--active');
 })
 
 closeMenu.addEventListener('click', function (event){
   event.preventDefault();
-  menuContent.style.display = `none`;
+  menuContent.classList.remove('menu--active');
 })
