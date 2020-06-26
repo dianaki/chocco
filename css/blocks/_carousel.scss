@@ -1,5 +1,9 @@
 .page-slider {
   background-color: #f8faf9;
+
+  @include phones{
+    padding: rem(120px) 0;
+  }
 }
 
 .carousel__item {

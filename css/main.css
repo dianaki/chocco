@@ -1221,6 +1221,9 @@ img {
 
 .page-slider {
   background-color: #f8faf9; }
+  @media screen and (max-width: 480px) {
+    .page-slider {
+      padding: 7.5rem 0; } }
 
 .carousel__item {
   display: -webkit-box;
