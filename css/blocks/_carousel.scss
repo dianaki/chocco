@@ -1,5 +1,21 @@
-.page-slider {
+.slider-section {
+  position: relative;
   background-color: #f8faf9;
+
+  &:before {
+    content: url(../images/leaf-and-berries.png);
+    position: absolute;
+    right: 0;
+    bottom: rem(-100px);
+
+    @include tablets {
+      right: rem(-40px);
+    }
+
+    @include phones {
+      bottom: rem(-360px);
+    }
+  }
 
   @include phones{
     padding: rem(124px) 0;

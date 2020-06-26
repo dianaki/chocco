@@ -768,7 +768,8 @@ img {
     content: url("../images/raspberry.png");
     position: absolute;
     bottom: -5rem;
-    left: 0; }
+    left: 0;
+    z-index: 100; }
     @media screen and (max-width: 768px) {
       .benefits-section:before {
         bottom: -10rem; } }
@@ -782,8 +783,9 @@ img {
   .reviews-section::before {
     content: url("../images/bw-leaf.png");
     position: absolute;
-    left: 0;
-    bottom: -14.6875rem; }
+    left: -1.875rem;
+    bottom: -6.25rem;
+    z-index: 100; }
   .reviews-section:after {
     content: url("../images/strawberry.png");
     right: 0;
@@ -1219,10 +1221,22 @@ img {
     height: 1.375rem;
     fill: #ffffff; }
 
-.page-slider {
+.slider-section {
+  position: relative;
   background-color: #f8faf9; }
+  .slider-section:before {
+    content: url(../images/leaf-and-berries.png);
+    position: absolute;
+    right: 0;
+    bottom: -6.25rem; }
+    @media screen and (max-width: 768px) {
+      .slider-section:before {
+        right: -2.5rem; } }
+    @media screen and (max-width: 480px) {
+      .slider-section:before {
+        bottom: -22.5rem; } }
   @media screen and (max-width: 480px) {
-    .page-slider {
+    .slider-section {
       padding: 7.75rem 0; } }
 
 .carousel__item {
