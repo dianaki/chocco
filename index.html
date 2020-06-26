@@ -11,10 +11,10 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      
+
       <section class="section hero-section">
         <div class="container hero__container">
-          <header class="header">           
+          <header class="header">
             <a href="#" class="logo">
               <img src="./images/logo.png" alt="CHOCCO logo" class="logo__pic">
             </a>
@@ -78,8 +78,8 @@
           <div class="headline">
             <h2 class="section__title headline__title">почему chocco?</h2>
             <div class="headline__subtitle">В нашем мире все происходит очень быстро, поэтому мы
-            делаем батончики, которые удобно взять с собой.
-          </div>
+              делаем батончики, которые удобно взять с собой.
+            </div>
           </div>
           <ul class="benefits">
             <li class="benefits__item benefit">
@@ -136,6 +136,57 @@
           </ul>
         </div>
       </section>
+      <section class="section page-slider">
+        <div class="container slider__container">
+          <div class="carousel">
+            <a href="" class="arrow arrow--left">
+              <svg class="arrow-icon">
+                <use xlink:href="./icons/sprite.svg#arrow-left"></use>
+              </svg>
+            </a>
+            <div class="carousel__list-container">
+              <ul class="carousel__list">
+                <li class="carousel__item">
+                  <div class="carousel__col">
+                    <div class="carousel__img">
+                      <img src="./images/carousel-chocolates.png" class="carousel__pic">
+                    </div>
+                  </div>
+                  <div class="carousel__col">
+                    <h4 class="carousel__heading">Батончик “Гранола виноград”</h4>
+                    <div class="product-description">
+                      <div class="product-description__ingredients">
+                        <p class="product-description__text">Гранола из винограда, грецкого ореха и кунжутных семечек. В
+                          состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                        </p>
+                      </div>
+                      <div class="product-description__section">
+                        <div class="product-description__cal">
+                          <div class="product-description__numbers">Калорийность</div>
+                          <div class="product-description__numbers product-description__numbers--bold">110 ккал</div>
+                        </div>
+                        <div class="product-description__weight">
+                          <div class="product-description__numbers">Вес</div>
+                          <div class="product-description__numbers product-description__numbers--bold">95 грамм</div>
+                        </div>
+                      </div>
+                      <div class="product-description__section">
+                        <span class="product-description__price">140 ₽</span>
+                        <button type="button" class=" btn btn--green">заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="" class="arrow arrow--right">
+              <svg class="arrow-icon">
+                <use xlink:href="./icons/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
@@ -149,9 +200,9 @@
                   <h3 class="reviews__title">Лучший перекус</h3>
                   <div class="reviews__text">
                     <p>
-                      Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. 
-                      В течение дня сижу за компьютером и часто отходить в кафе или на кухню 
-                      просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. 
+                      Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы.
+                      В течение дня сижу за компьютером и часто отходить в кафе или на кухню
+                      просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.
                     </p>
                   </div>
                   <div class="reviews__author">
@@ -165,7 +216,7 @@
                 <a href="" class="interactive-avatar__link">
                   <img src="./reviews/photo1.jpg" alt="girl" class="interactive-avatar__img">
                 </a>
-              </li> 
+              </li>
               <li class="reviews__switcher-item interactive-avatar">
                 <a href="" class="interactive-avatar__link">
                   <img src="./reviews/photo2.jpg" alt="girl2" class="interactive-avatar__img">
@@ -229,12 +280,12 @@
               </div>
               <div class="form__controls">
                 <label class="radio">
-                  <input type="radio"  name="option" class="radio__elem">
+                  <input type="radio" name="option" class="radio__elem">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Потребуется сдача</div>
                 </label>
                 <label class="radio">
-                  <input type="radio" name= "option" class="radio__elem">
+                  <input type="radio" name="option" class="radio__elem">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Оплата по карте</div>
                 </label>
@@ -287,7 +338,7 @@
                     <use xlink:href="./icons/sprite.svg#inst"></use>
                   </svg>
                 </a>
-               </li>
+              </li>
               <li class="social social__item">
                 <a href="" class="social__link--tw">
                   <svg class="social-icon">
@@ -322,15 +373,15 @@
         </li>
       </ul>
     </nav>
-    <a href="" id= "openMenu" class="gamburger">
+    <a href="" id="openMenu" class="gamburger">
       <svg class="gamburger-icon">
         <use xlink:href="./icons/sprite.svg#gamburger"></use>
       </svg>
     </a>
     <nav id="menuContent" class="menu menu--active">
-      <a href="" id= "closeMenu" class="close">
+      <a href="" id="closeMenu" class="close">
         <svg class="close-icon">
-          <use xlink:href= "./icons/sprite.svg#close"></use>
+          <use xlink:href="./icons/sprite.svg#close"></use>
         </svg>
       </a>
       <ul class="menu__list">
@@ -346,4 +397,5 @@
   </div>
   <script src="./main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,119 @@
+.page-slider {
+  background-color: #f8faf9;
+}
+
+.carousel__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.carousel__col {
+  width: 50%;
+  margin-right: rem(60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:last-child{
+    margin-right: 0;
+  } 
+
+  @include tablets {
+    margin-right: 0;
+    align-items: center;
+    width: 100%;
+  }
+}
+.carousel__pic {
+  @include tablets {
+    width: rem(370px);
+    height: rem(350px);
+  }
+}
+.arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+
+  @include tablets{
+    top: 25%;
+  }
+
+  &--left {
+    right: 100%;
+
+    @include tablets {
+      right: 85%;
+    }
+  }
+
+  &--right {
+    left: 100%;
+
+    @include tablets{
+      left: 85%;
+    }
+  }
+}
+.arrow-icon {
+  width: rem(13px);
+  height: rem(28px);
+}
+.carousel__heading {
+  font-weight: bold;
+  font-size: rem(36px);
+  color: #000000;
+  width: 79%;
+  margin-bottom: rem(22px);
+  text-transform: uppercase;
+}
+.product-description {
+  width: 75%;
+  font-size: rem(18px);
+
+  @include tablets {
+    width: 70%;
+  }
+  @include phones {
+    width: 72%;
+  }
+  &__ingredients {
+    margin-bottom: rem(38px);
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: rem(30px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include tablets {
+      justify-content: center;
+      text-align: left;
+    }
+  }
+
+  &__cal {
+    margin-right: rem(55px);
+  }
+}
+.product-description__numbers--bold {
+  font-weight: bold;
+  color: #000;
+}
+.product-description__price {
+  color: #151515;
+  font-size: rem(60px);
+  font-weight: 300;
+  margin-right: rem(31px);
+}
