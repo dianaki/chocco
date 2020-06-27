@@ -1331,6 +1331,55 @@ img {
   width: 0.8125rem;
   height: 1.75rem; }
 
+.product__ingredients {
+  margin-bottom: 2.3125rem; }
+  @media screen and (max-width: 768px) {
+    .product__ingredients {
+      display: none; } }
+
+.ingredients {
+  position: relative;
+  display: inline-block; }
+  .ingredients:hover .ingredients__dropdown {
+    opacity: 1;
+    visibility: visible; }
+
+.ingredients__btn {
+  width: 5.625rem;
+  height: 5.625rem;
+  background: #61c4d9;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #fff; }
+  .ingredients__btn:hover {
+    background: #60aacc; }
+
+.ingredients__btn-pic {
+  margin-bottom: 0.3125rem; }
+
+.chocolate-icon {
+  width: 3.1875rem;
+  height: 3.1875rem;
+  display: block;
+  fill: #fff; }
+
+.ingredients__btn-text {
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
 .carousel__heading {
   font-weight: bold;
   font-size: 2.25rem;
@@ -1388,3 +1437,51 @@ img {
   @media screen and (max-width: 480px) {
     .product-description__price {
       font-size: 2.8125rem; } }
+
+.ingredients__dropdown {
+  position: absolute;
+  background-color: #ffffff;
+  border: solid 1px #eeeeee;
+  border-radius: 5px;
+  top: 0;
+  left: 5.625rem;
+  padding: 1.4375rem 1.25rem;
+  opacity: 0;
+  -webkit-transition: opacity .5s, linear .3s;
+  -o-transition: opacity .5s, linear .3s;
+  transition: opacity .5s, linear .3s;
+  z-index: 1000;
+  color: #363636;
+  width: 279px;
+  height: 329px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  visibility: hidden; }
+  .ingredients__dropdown-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .ingredients__dropdown-icon {
+    margin-right: 1.25rem; }
+  .ingredients__dropdown-text {
+    font-weight: 500; }
+  .ingredients__dropdown-weight {
+    margin-left: auto; }
+
+.dropdown-icon {
+  width: 2.1875rem;
+  height: 2.1875rem; }
