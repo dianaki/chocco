@@ -1,6 +1,6 @@
 .menu--fixed {
   opacity: 0;
-  transition: all .5s;
+  transition: all .5s, linear .3s;
   display: flex;
   position: fixed;
   justify-content: center;
@@ -10,11 +10,25 @@
   top: 0;
   bottom: 100%;
   background-color: rgba(48, 52, 52, 0.99);
+  visibility: hidden;
+
+  .close {
+    position: absolute;
+    right: 3%;
+    top: rem(35px);
+    visibility: hidden;
+  }
+  .close-icon {
+    width: rem(24px);
+    height: rem(22px);
+    fill: #ffffff;
+  }
 }
 
 .menu--active {
-  bottom: 0;
+  visibility: visible;
   opacity: 1;
+  bottom: 0;
   
   .menu__list {
     flex-direction: column;
@@ -32,13 +46,6 @@
     }
   }
   .close {
-    position: absolute;
-    right: 3%;
-    top: rem(35px);
-  }
-  .close-icon {
-    width: rem(24px);
-    height: rem(22px);
-    fill: #ffffff;
+    visibility: visible;
   }
 }
