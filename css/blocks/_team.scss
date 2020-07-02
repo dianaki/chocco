@@ -47,6 +47,9 @@
     @include tablets {
       height: rem(380px);
     }
+    @include phones {
+      height: rem(420px);
+    }
   }
   .team__name::after {
     content: '';

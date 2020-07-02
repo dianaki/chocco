@@ -1542,6 +1542,9 @@ img {
   @media screen and (max-width: 768px) {
     .team__item--active .team__desc {
       height: 23.75rem; } }
+  @media screen and (max-width: 480px) {
+    .team__item--active .team__desc {
+      height: 26.25rem; } }
 
 .team__item--active .team__name::after {
   content: '';
