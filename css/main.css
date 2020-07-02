@@ -1504,9 +1504,19 @@ img {
   -ms-flex: 1;
   flex: 1;
   text-align: center;
-  margin-right: 1.25rem; }
+  margin-right: 1.25rem;
+  min-height: 28.125rem; }
   .team__item:last-child {
     margin-right: 0; }
+
+.team__item--active .team__desc {
+  height: 4.75rem; }
+
+.team__item--active .team__name::after {
+  content: '';
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
 
 .team__avatar {
   height: 18rem;
@@ -1545,7 +1555,9 @@ img {
     margin-left: 0.1875rem; }
 
 .team__desc {
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  height: 0;
+  overflow: hidden; }
   .team__desc-title {
     color: #000000;
     font-weight: normal; }

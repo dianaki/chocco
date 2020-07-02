@@ -6,11 +6,23 @@
   flex: 1;
   text-align: center;
   margin-right: rem(20px);
+  min-height: rem(450px);
 
   &:last-child {
     margin-right: 0;
   }
 }
+
+.team__item--active {
+  .team__desc {
+    height: rem(76px);
+  }
+  .team__name::after {
+    content: '';
+    transform: rotate(-180deg);
+  }
+}
+
 .team__avatar {
   height: rem(288px);
   margin-bottom: rem(24px);
@@ -44,6 +56,8 @@
 }
 .team__desc {
   font-size: rem(18px);
+  height: 0;
+  overflow: hidden;
 
   &-title {
     color: #000000;
