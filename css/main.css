@@ -1505,12 +1505,12 @@ img {
   flex: 1;
   text-align: center;
   margin-right: 1.25rem;
-  min-height: 28.125rem; }
+  min-height: 29.125rem; }
   .team__item:last-child {
     margin-right: 0; }
 
 .team__item--active .team__desc {
-  height: 4.75rem; }
+  height: 7.8125rem; }
 
 .team__item--active .team__name::after {
   content: '';
@@ -1557,7 +1557,10 @@ img {
 .team__desc {
   font-size: 1.125rem;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: height .5s;
+  -o-transition: height .5s;
+  transition: height .5s; }
   .team__desc-title {
     color: #000000;
     font-weight: normal; }

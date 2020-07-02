@@ -6,7 +6,7 @@
   flex: 1;
   text-align: center;
   margin-right: rem(20px);
-  min-height: rem(450px);
+  min-height: rem(466px);
 
   &:last-child {
     margin-right: 0;
@@ -15,7 +15,7 @@
 
 .team__item--active {
   .team__desc {
-    height: rem(76px);
+    height: rem(125px);
   }
   .team__name::after {
     content: '';
@@ -58,6 +58,7 @@
   font-size: rem(18px);
   height: 0;
   overflow: hidden;
+  transition: height .5s;
 
   &-title {
     color: #000000;
