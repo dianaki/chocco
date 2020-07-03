@@ -1,3 +1,9 @@
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+
 .slider-section {
   position: relative;
   background-color: #f8faf9;
@@ -146,7 +152,7 @@
   font-weight: bold;
   font-size: rem(36px);
   color: #000000;
-  width: 79%;
+  width: 82%;
   margin-bottom: rem(22px);
   text-transform: uppercase;
 
