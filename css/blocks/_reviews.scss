@@ -22,10 +22,12 @@
 }
 .reviews__display {
   background: url("../images/bw-berry.png") right top no-repeat;
+  box-shadow: 0px 13px 30px 0px rgba(145, 169, 157, 0.17);
   padding: rem(50px) rem(45px) rem(34px);
   margin-bottom: rem(15px);
   overflow: hidden;
   position: relative;
+  min-height: rem(280px);
 
   &:before {
     content:"";
@@ -41,14 +43,19 @@
   }
 }
 .reviews__display-inner {
+  display: none;
+
+  &--active {
   display: flex;
 
-  @include tablets {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
   }
 }
+
 .reviews__avatar {
   width: rem(254px);
   height: rem(260px);

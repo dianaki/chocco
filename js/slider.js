@@ -6,7 +6,6 @@ let carousel = $('.carousel__list').bxSlider({
 $(".arrow--right").click(e=> {
   e.preventDefault();
   carousel.goToNextSlide();
-  
 })
 
 $(".arrow--left").click(e=> {
