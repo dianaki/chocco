@@ -1615,3 +1615,20 @@ img {
   .team__desc-text {
     font-weight: 300;
     color: #666666; }
+
+.modal {
+  display: none;
+  text-align: center; }
+
+.fancybox-content {
+  padding: 2.1875rem 4.375rem; }
+
+.fancybox-button {
+  display: none; }
+
+.modal__content {
+  color: #000000;
+  margin-bottom: 1.5625rem; }
+
+.input-error {
+  border-color: red; }
