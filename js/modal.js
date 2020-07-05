@@ -38,12 +38,11 @@ $('.form').submit((e) => {
         comment: comment.val(),
         to: to.val(),
       },
+      
       success: (data) => {
         content.text(data.message);
         $('.error').text('');
-        name.val('');
-        phone.val('');
-        comment.val('');
+        $(form)[0].reset();
       
         $.fancybox.open({
           src: ".modal",
@@ -53,9 +52,7 @@ $('.form').submit((e) => {
       },
       error: (data) => {
         $('.error').text('');
-        name.val('');
-        phone.val('');
-        comment.val('');
+        $(form)[0].reset();
         const message = data.responseJSON.message;
         content.text(message);
 

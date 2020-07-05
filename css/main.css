@@ -361,6 +361,9 @@ a {
   color: inherit;
   white-space: nowrap; }
 
+a, button {
+  z-index: 1000; }
+
 p {
   padding: 0;
   margin: 0;
