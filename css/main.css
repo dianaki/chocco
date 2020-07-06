@@ -362,7 +362,7 @@ a {
   white-space: nowrap; }
 
 a, button {
-  z-index: 1000; }
+  z-index: 1; }
 
 p {
   padding: 0;
@@ -407,6 +407,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 2.8125rem;
   text-align: center; }
+  .section__title--white {
+    color: #ffffff;
+    margin-bottom: 0;
+    position: absolute;
+    top: 10%;
+    left: 10%; }
 
 .hero-section {
   background: url("../images/big-leaf.png") right bottom no-repeat;
@@ -1635,3 +1641,116 @@ img {
 
 .input-error {
   border-color: red; }
+
+.menu-section {
+  background: url("../images/bg-menu.png") center left no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  overflow: hidden; }
+
+.menu-acco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .menu-acco__item {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    width: auto;
+    -webkit-transition: width .5s ease-in;
+    -o-transition: width .5s ease-in;
+    transition: width .5s ease-in; }
+    @media screen and (max-width: 480px) {
+      .menu-acco__item {
+        z-index: 30; } }
+  .menu-acco__hidden {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 30;
+    width: 0;
+    overflow: hidden;
+    -webkit-transition: width .5s ease-in;
+    -o-transition: width .5s ease-in;
+    transition: width .5s ease-in; }
+  .menu-acco__btn {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 6.25rem;
+    background-size: cover;
+    background-position: right; }
+    .menu-acco__btn--milk {
+      background: url("../images/type-milk.png"); }
+    .menu-acco__btn--honey {
+      background: url("../images/type-honey.png"); }
+    .menu-acco__btn--berry {
+      background: url("../images/type-berry.png"); }
+  .menu-acco__title {
+    font-size: 3rem;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-top: -2.875rem;
+    -webkit-transform: rotate(-90deg) translateY(-50%);
+    -ms-transform: rotate(-90deg) translateY(-50%);
+    transform: rotate(-90deg) translateY(-50%);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0; }
+  .menu-acco__content {
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative; }
+  .menu-acco__close {
+    display: block;
+    position: absolute;
+    top: 1.875rem;
+    right: 1.875rem; }
+    .menu-acco__close-icon {
+      fill: #fff;
+      opacity: .7;
+      width: 1.125rem;
+      height: 1.125rem; }
+  .menu-acco__text {
+    padding: 3.125rem 7.5rem 0 1.6875rem;
+    line-height: 1.5; }
+    @media screen and (max-width: 480px) {
+      .menu-acco__text {
+        padding-right: 4.375rem; } }
+
+.menu-acco__item--active {
+  width: 57%; }
+  @media screen and (max-width: 768px) {
+    .menu-acco__item--active {
+      width: 100%; } }
+  .menu-acco__item--active .menu-acco__hidden {
+    width: 100%; }
+  @media screen and (max-width: 480px) {
+    .menu-acco__item--active {
+      z-index: 35;
+      position: absolute; } }
