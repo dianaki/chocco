@@ -44,8 +44,6 @@
     height: 100%;
     position: relative;
     width: rem(100px);
-    background-size: cover;
-    background-position: right;
 
     @include phones {
       width: rem(70px);
@@ -53,15 +51,20 @@
 
     &--milk {
       background: url("../images/type-milk.png");
-      
+      background-size: cover;
+      background-position: right;
     }
 
     &--honey {
       background: url("../images/type-honey.png");
+      background-size: cover;
+      background-position: right;
     }
 
     &--berry {
       background: url("../images/type-berry.png");
+      background-size: cover;
+      background-position: right;
     }
   }
 

@@ -1699,18 +1699,22 @@ img {
     display: block;
     height: 100%;
     position: relative;
-    width: 6.25rem;
-    background-size: cover;
-    background-position: right; }
+    width: 6.25rem; }
     @media screen and (max-width: 480px) {
       .menu-acco__btn {
         width: 4.375rem; } }
     .menu-acco__btn--milk {
-      background: url("../images/type-milk.png"); }
+      background: url("../images/type-milk.png");
+      background-size: cover;
+      background-position: right; }
     .menu-acco__btn--honey {
-      background: url("../images/type-honey.png"); }
+      background: url("../images/type-honey.png");
+      background-size: cover;
+      background-position: right; }
     .menu-acco__btn--berry {
-      background: url("../images/type-berry.png"); }
+      background: url("../images/type-berry.png");
+      background-size: cover;
+      background-position: right; }
   .menu-acco__title {
     font-size: 3rem;
     text-align: center;
