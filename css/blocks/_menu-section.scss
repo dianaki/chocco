@@ -47,6 +47,10 @@
     background-size: cover;
     background-position: right;
 
+    @include phones {
+      width: rem(70px);
+    }
+
     &--milk {
       background: url("../images/type-milk.png");
       
@@ -71,6 +75,10 @@
     margin-top: rem(-46px);
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0; 
+
+    @include phones {
+      font-size: rem(40px);
+    }
   }
 
   &__content {

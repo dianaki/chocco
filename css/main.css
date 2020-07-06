@@ -413,6 +413,10 @@ img {
     position: absolute;
     top: 10%;
     left: 10%; }
+    @media screen and (max-width: 480px) {
+      .section__title--white {
+        font-size: 2.5rem;
+        left: 5%; } }
 
 .hero-section {
   background: url("../images/big-leaf.png") right bottom no-repeat;
@@ -1698,6 +1702,9 @@ img {
     width: 6.25rem;
     background-size: cover;
     background-position: right; }
+    @media screen and (max-width: 480px) {
+      .menu-acco__btn {
+        width: 4.375rem; } }
     .menu-acco__btn--milk {
       background: url("../images/type-milk.png"); }
     .menu-acco__btn--honey {
@@ -1718,6 +1725,9 @@ img {
     -webkit-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
     transform-origin: 0 0; }
+    @media screen and (max-width: 480px) {
+      .menu-acco__title {
+        font-size: 2.5rem; } }
   .menu-acco__content {
     height: 100%;
     -webkit-box-flex: 1;
