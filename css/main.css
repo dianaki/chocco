@@ -1870,7 +1870,8 @@ img {
   right: 0;
   bottom: 0;
   background: url("../images/player_splash.png") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  cursor: pointer; }
   .player__splash:after {
     content: "";
     background-image: url("../images/play-white.png");

@@ -101,6 +101,7 @@
   bottom: 0;
   background: url('../images/player_splash.png')no-repeat;
   background-size: cover;
+  cursor: pointer;
 
   &:after {
     content: "";
