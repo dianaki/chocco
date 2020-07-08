@@ -99,12 +99,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../images/player_splash.png)no-repeat;
+  background: url('../images/player_splash.png')no-repeat;
   background-size: cover;
 
   &:after {
     content: "";
-    background-image: url("../../images/play-white.png");
+    background-image: url("../images/play-white.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: rem(118px);
@@ -139,7 +139,7 @@
 .player__start {
   width: rem(16px);
   height: rem(22px);
-  background: url('../../icons/play.svg')center center no-repeat;
+  background: url('../icons/play.svg')center center no-repeat;
   background-size: cover;
   position: relative;
   
@@ -208,7 +208,7 @@
 .player__volume-btn {
   width: rem(16px);
   height: rem(22px);
-  background: url('../../icons/volume.svg')center center no-repeat;
+  background: url('../icons/volume.svg')center center no-repeat;
   position: relative;
   display: block;
   margin-right: rem(19px);
