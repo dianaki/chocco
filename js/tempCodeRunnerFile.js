@@ -1,1 +1,0 @@
-'.reviews__switcher-item').index ();

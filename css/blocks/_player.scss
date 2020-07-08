@@ -1,0 +1,257 @@
+.video-section {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url('../../images/right-leaf.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 11%;
+    height: 19%;
+    background-size: 100%;
+    max-width: rem(90px);
+    max-height: rem(77px);
+    right: 10%;
+    top: 27%;
+
+    @include tablets {
+      right: 3%;
+      top: 21%;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../../images/left-leaf.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 11%;
+    height: 19%;
+    background-size: 100%;
+    max-width: rem(72px);
+    max-height: rem(135px);
+    left: 10%;
+    bottom: 10%;
+
+    @include tablets {
+      left: 0;
+      bottom: 26%;
+    }
+
+    @include phones {
+      bottom: 0;
+    }
+  }
+}
+.video__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: rem(680px);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../../images/blackberry.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    max-width: rem(190px);
+    max-height: rem(263px);
+    right: -31%;
+    bottom: -67%;
+    z-index: 100;
+
+    @include tablets {
+      right: -6%;
+      bottom: -48%;
+      width: rem(150px);
+      height: rem(220px);
+    }
+
+    @include phones {
+      bottom: -38%;
+      width: rem(100px);
+      height: rem(170px);
+    }
+  }
+}
+.player {
+  display: block;
+  position: relative;
+  width: rem(660px);
+  height: rem(405px);
+  width: 100%;
+
+  @include phones {
+    width: 90%;
+  }
+}
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/player_splash.png)no-repeat;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    background-image: url("../../images/play-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: rem(118px);
+    width: rem(82px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}
+.player__controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: rem(35px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3e3e3e;
+  padding: 0 rem(25px);
+
+  @include phones {
+    padding: 0 rem(12px);
+  }
+}
+.player__btn {
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+.player__start {
+  width: rem(16px);
+  height: rem(22px);
+  background: url('../../icons/play.svg')center center no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  &.paused {
+    background: none;
+    width: rem(16px);
+    height: rem(22px);
+    border: none;
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: rem(5px);
+      top: 0;
+      bottom: 0;
+      background: #626262;
+    }
+    &:after {
+      right: 0;
+    }
+    &:before {
+      left: 0;
+    }
+  }
+}
+.player__playback {
+  height: rem(16px);
+  width: 70%;
+  position: relative;
+
+  @include phones {
+    width: 55%;
+  }
+
+  &:before {
+    content: "";
+    height: rem(4px);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #626262;
+    display: block;
+    transform: translateY(-50%);
+  }
+}
+.player__playback-btn {
+  background: #626262;
+  border-radius: 50px;
+  border: none;
+  width: rem(12px);
+  height: rem(12px);
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+.player__volume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.player__volume-btn {
+  width: rem(16px);
+  height: rem(22px);
+  background: url('../../icons/volume.svg')center center no-repeat;
+  position: relative;
+  display: block;
+  margin-right: rem(19px);
+
+  &.mute {
+   &:after {
+    content: "";
+    width: 100%;
+    height: rem(1px);
+    background-color: #626262;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+   }
+  }
+}
+.volume__playback {
+  height: 100%;
+  width: rem(58px);
+  position: relative;
+
+  &:before {
+    content: "";
+    height: rem(4px);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #626262;
+    display: block;
+    transform: translateY(-50%);
+  }
+}
+.volume__playback-btn {
+  background: #626262;
+  border-radius: 50px;
+  border: none;
+  width: rem(12px);
+  height: rem(12px);
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}

@@ -21,6 +21,10 @@
   margin-bottom: rem(45px);
   text-align: center;
 
+  @include phones {
+    font-size: rem(40px);
+  }
+
   &--white {
     color: #ffffff;
     margin-bottom: 0;
@@ -29,7 +33,6 @@
     left: 10%;
 
     @include phones {
-      font-size: rem(40px);
       left: 5%;
     }
   }
