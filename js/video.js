@@ -64,5 +64,3 @@ $('.volume__playback').on('click', function(e){
   let x = (e.pageX - $(this).offset().left)/$(this).width();
   video.volume = x;
 });
-
-document.addEventListener('DOMContentLoaded', ready);
