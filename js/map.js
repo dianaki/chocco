@@ -3,7 +3,7 @@ let NyMap;
 function init() {
   myMap = new ymaps.Map("map", {
     center: [55.752264, 37.600023],
-    zoom: 14,
+    zoom: 13,
     controls: []
   });
 
