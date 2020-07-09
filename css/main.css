@@ -1860,7 +1860,8 @@ img {
   width: 100%; }
   @media screen and (max-width: 480px) {
     .player {
-      width: 90%; } }
+      width: 90%;
+      height: 100%; } }
   .player.active .player__splash {
     display: none; }
 
