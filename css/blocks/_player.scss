@@ -4,7 +4,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url('../../images/right-leaf.png');
+    background-image: url('../images/right-leaf.png');
     background-repeat: no-repeat;
     background-position: center;
     width: 11%;
@@ -24,7 +24,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url('../../images/left-leaf.png');
+    background-image: url('../images/left-leaf.png');
     background-repeat: no-repeat;
     background-position: center;
     width: 11%;
@@ -56,7 +56,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url('../../images/blackberry.png');
+    background-image: url('../images/blackberry.png');
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -76,9 +76,9 @@
     }
 
     @include phones {
-      bottom: -38%;
+      bottom: -88%;
       width: rem(100px);
-      height: rem(170px);
+      height: rem(148px);
     }
   }
 }

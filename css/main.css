@@ -1775,7 +1775,7 @@ img {
   .video-section::after {
     content: "";
     position: absolute;
-    background-image: url("../../images/right-leaf.png");
+    background-image: url("../images/right-leaf.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 11%;
@@ -1792,7 +1792,7 @@ img {
   .video-section::before {
     content: "";
     position: absolute;
-    background-image: url("../../images/left-leaf.png");
+    background-image: url("../images/left-leaf.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 11%;
@@ -1829,7 +1829,7 @@ img {
   .video__container::before {
     content: "";
     position: absolute;
-    background-image: url("../../images/blackberry.png");
+    background-image: url("../images/blackberry.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -1848,9 +1848,9 @@ img {
         height: 13.75rem; } }
     @media screen and (max-width: 480px) {
       .video__container::before {
-        bottom: -38%;
+        bottom: -88%;
         width: 6.25rem;
-        height: 10.625rem; } }
+        height: 9.25rem; } }
 
 .player {
   display: block;
