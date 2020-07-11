@@ -1,78 +1,99 @@
 const sections = $('section');
 const display = $('.maincontent');
+const sideMenu = $('.fixed-menu');
+const menuItems = sideMenu.find('.fixed-menu__item');
 
 let inScroll = false;
 
 sections.first().addClass('active');
 
+const countSectionPosition = (sectionEq) => {
+  const position = sectionEq * -100;
+  
+  if(isNaN(position)) {
+    console.error('передано неверное значение в countSectionPosition');
+    return 0;
+  }
+
+  return position;
+}
+
+const resetActiveClassForItem = (items, itemEq, activeClass) => {
+  items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
+}
+
 const performTransition = sectionEq => {
-  if (inScroll === false) {
-    inScroll = true;
-    const position = sectionEq * -100;
+  if (inScroll) return;
 
-    const sideMenu = $('.fixed-menu')
+  const transitionOver = 1000;
+  const mouseInertiaOver = 300;
 
-    display.css ({
-      transform: `translateY(${position}%)`
-    });
+  inScroll = true;
+  const position = sectionEq * -100;
 
-    sections.eq(sectionEq).addClass('active').siblings().removeClass('active');
+  const sideMenu = $('.fixed-menu')
 
-    setTimeout(() => {
-      inScroll = false;
+  display.css ({
+    transform: `translateY(${position}%)`
+  });
 
-      sideMenu
-        .find('.fixed-menu__item')
-        .eq(sectionEq)
-        .addClass('fixed-menu__item--active')
-        .siblings()
-        .removeClass('fixed-menu__item--active')
-    }, 1300);
-  } 
+  resetActiveClassForItem(sections, sectionEq, 'active');
+
+  setTimeout(() => {
+    inScroll = false;
+    resetActiveClassForItem(menuItems, sectionEq, 'fixed-menu__item--active');
+  }, transitionOver + mouseInertiaOver);
 };
 
-const scrollViewport = direction => {
+const viewportScroller = () => {
   const activeSection = sections.filter('.active');
   const prevSection = activeSection.prev();
   const nextSection = activeSection.next();
 
-
-
-  if (direction === 'next' && nextSection.length) {
-    performTransition(nextSection.index());
-  }
-
-  if (direction === 'prev' && prevSection.length){
-    performTransition(prevSection.index());
-  }
+  return {
+    next(){
+      if (nextSection.length) {
+        performTransition(nextSection.index());
+      }
+    },
+    prev(){
+      if (prevSection.length){
+        performTransition(prevSection.index());
+      }
+    },
+  };
 };
 
 $(window).on('wheel', e => {
   const deltaY = e.originalEvent.deltaY;
+  const scroller = viewportScroller();
 
   if (deltaY > 0) {
-    scrollViewport('next');
+    scroller.next();
   }
 
   if (deltaY < 0) {
-    scrollViewport('prev');
+    scroller.prev();
   }
 });
 
 $(window).on('keydown', (e) => {
 
   const tagName = e.target.tagName.toLowerCase();
+  const userTypingInInputs = tagName === 'input' || tagName === 'textarea';
 
-  if (tagName != 'input' && tagName != 'textarea') {
-      switch (e.keyCode) {
+  const scroller = viewportScroller();
+
+  if (userTypingInInputs) return;
+
+  switch (e.keyCode) {
     case 38:
-      scrollViewport('prev');
-      break;
+    scroller.prev();
+    break;
 
-    case 40:
-      scrollViewport('next');
-      break;
-    }
+  case 40:
+    scroller.next();
+    break;
   }
 });
 
