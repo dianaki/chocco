@@ -19,7 +19,7 @@ const countSectionPosition = (sectionEq) => {
   }
   return position;
 };
-
+const activeClass = 'fixed-menu__item--active';
 const resetActiveClassForItem = (items, itemEq, activeClass) => {
   items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
 }
@@ -35,7 +35,7 @@ const performTransition = (sectionEq) => {
   const position = countSectionPosition(sectionEq);
 
   display.css ({
-    transform: `translateY(${position}%)`
+    transform: `translateY(${position}%)`,
   });
 
   resetActiveClassForItem(sections, sectionEq, 'active');
@@ -81,23 +81,23 @@ $(window).on('wheel', (e) => {
 $(window).on('keydown', (e) => {
 
   const tagName = e.target.tagName.toLowerCase();
-  const userTypingInInputs = tagName === 'input' || tagName === 'textarea';
+  const userTypingInInputs = tagName == 'input' || tagName == 'textarea';
   const scroller = viewportScroller();
 
   if (userTypingInInputs) return;
 
   switch (e.keyCode) {
     case 38:
-    scroller.prev();
-    break;
+      scroller.prev();
+      break;
 
     case 40:
-    scroller.next();
-    break;
+      scroller.next();
+      break;
   }
 });
 
-$('.wrapper').on('touchmove', e => e.preventDefault());
+$('.wrapper').on('touchmove', (e) => e.preventDefault());
 
 $('[data-scroll-to]').click((e) => {
   e.preventDefault();
@@ -109,15 +109,14 @@ $('[data-scroll-to]').click((e) => {
   performTransition(reqSection.index());
 });
 
-
 if (isMobile) {
   $('body').swipe({
-    swipe: function(event, direction) {
+    swipe: function (event, direction) {
       const scroller = viewportScroller();
       let scrollDirection = '';
 
-      if (direction === 'up') scrollDirection = 'next';
-      if (direction === 'down') srollDirection = 'prev';
+      if (direction == 'up') scrollDirection = 'next';
+      if (direction == 'down') srollDirection = 'prev';
 
       scroller[scrollDirection]();
     },

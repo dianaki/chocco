@@ -14,7 +14,7 @@
   <div class="wrapper">
     <div class="maincontent">
 
-      <section data-section-id="hero" class="section hero-section">
+      <section data-section-id="hero" class="hero-section">
         <div class="container hero__container">
           <header class="header">
             <a href="#" class="logo">
@@ -731,14 +731,6 @@
           </form>
         </div>
       </section>
-      <div id="modal" class="modal">
-        <div class="modal__content">
-          Сообщение отправлено
-        </div>
-        <div class="modal__btn">
-          <button class="btn js-submit-btn btn--green">Закрыть</button>
-        </div>
-      </div>
       <section data-section-id="map" class="section map-section">
         <div id="map" class="map"></div>
         <footer class="footer">
@@ -786,9 +778,18 @@
         </footer>
       </section>
     </div>
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        Сообщение отправлено
+      </div>
+      <div class="modal__btn">
+        <button class="btn js-submit-btn btn--green">Закрыть</button>
+      </div>
+    </div>
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
-        <li class="fixed-menu__item fixed-menu__item--active"><a href="#" data-scroll-to="hero" class="fixed-menu__link"></a>
+        <li class="fixed-menu__item fixed-menu__item--active"><a href="#" data-scroll-to="hero"
+            class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item"><a href="#" data-scroll-to="benefits" class="fixed-menu__link"></a>
         </li>
@@ -819,7 +820,7 @@
           <use xlink:href="./icons/sprite.svg#close"></use>
         </svg>
       </a>
-      <ul id ="menu__list" class="menu__list">
+      <ul id="menu__list" class="menu__list">
         <li class="menu__item"><a href="#" data-scroll-to="benefits" class="menu__title">О нас</a></li>
         <li class="menu__item"><a href="#" data-scroll-to="slider" class="menu__title">Батончики</a></li>
         <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__title">Команда</a></li>
