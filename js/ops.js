@@ -120,6 +120,5 @@ if (isMobile) {
 
       scroller[scrollDirection]();
     },
-    treshold: 0
   });
 }
