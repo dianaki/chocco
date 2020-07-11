@@ -48,8 +48,8 @@ const performTransition = (sectionEq) => {
 
 const viewportScroller = () => {
   const activeSection = sections.filter('.active');
-  const prevSection = activeSection.prev();
   const nextSection = activeSection.next();
+  const prevSection = activeSection.prev();
 
   return {
     next(){
@@ -120,5 +120,6 @@ if (isMobile) {
 
       scroller[scrollDirection]();
     },
+    treshold: 0
   });
 }
