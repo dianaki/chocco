@@ -391,7 +391,7 @@ img {
   max-width: 100%; }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,8 +433,10 @@ img {
   background: url("../images/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
   color: #ffffff;
-  padding: 1.5625rem 0 1.5625rem;
-  position: relative; }
+  padding: 1.5625rem 0;
+  position: relative;
+  min-height: 40.625rem;
+  height: 100%; }
   @media screen and (max-width: 768px) {
     .hero-section {
       padding-bottom: 11.3125rem;
