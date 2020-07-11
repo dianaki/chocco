@@ -13,28 +13,26 @@ sections.first().addClass('active');
 const countSectionPosition = (sectionEq) => {
   const position = sectionEq * -100;
   
-  if(isNaN(position)) {
+  if (isNaN(position)) {
     console.error('передано неверное значение в countSectionPosition');
     return 0;
   }
-
   return position;
-}
+};
 
 const resetActiveClassForItem = (items, itemEq, activeClass) => {
   items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
 }
 
-const performTransition = sectionEq => {
+const performTransition = (sectionEq) => {
   if (inScroll) return;
 
   const transitionOver = 1000;
   const mouseInertiaOver = 300;
 
   inScroll = true;
-  const position = sectionEq * -100;
 
-  const sideMenu = $('.fixed-menu')
+  const position = countSectionPosition(sectionEq);
 
   display.css ({
     transform: `translateY(${position}%)`
@@ -67,7 +65,7 @@ const viewportScroller = () => {
   };
 };
 
-$(window).on('wheel', e => {
+$(window).on('wheel', (e) => {
   const deltaY = e.originalEvent.deltaY;
   const scroller = viewportScroller();
 
@@ -84,7 +82,6 @@ $(window).on('keydown', (e) => {
 
   const tagName = e.target.tagName.toLowerCase();
   const userTypingInInputs = tagName === 'input' || tagName === 'textarea';
-
   const scroller = viewportScroller();
 
   if (userTypingInInputs) return;
@@ -94,7 +91,7 @@ $(window).on('keydown', (e) => {
     scroller.prev();
     break;
 
-  case 40:
+    case 40:
     scroller.next();
     break;
   }
@@ -102,7 +99,7 @@ $(window).on('keydown', (e) => {
 
 $('.wrapper').on('touchmove', e => e.preventDefault());
 
-$('[data-scroll-to]').click(e =>{
+$('[data-scroll-to]').click((e) => {
   e.preventDefault();
 
   const $this = $(e.currentTarget);
@@ -115,12 +112,12 @@ $('[data-scroll-to]').click(e =>{
 
 if (isMobile) {
   $('body').swipe({
-    swipe:function(event, direction) {
+    swipe: function(event, direction) {
       const scroller = viewportScroller();
-      let scrollDirection ='';
+      let scrollDirection = '';
 
       if (direction === 'up') scrollDirection = 'next';
-      if (direction === 'down') srollerDirection = 'prev';
+      if (direction === 'down') srollDirection = 'prev';
 
       scroller[scrollDirection]();
     },
