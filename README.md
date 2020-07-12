@@ -1,6 +1,6 @@
 How to install and build my app
 
-git clone https://github.com/dianaki/CHOCCO
-cd chocco
-npm i
-npm run build
+1. git clone https://github.com/dianaki/CHOCCO
+2. cd chocco
+3. npm i
+4. npm run build
