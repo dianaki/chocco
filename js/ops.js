@@ -116,7 +116,7 @@ if (isMobile) {
       let scrollDirection = '';
 
       if (direction == 'up') scrollDirection = 'next';
-      if (direction == 'down') srollDirection = 'prev';
+      if (direction == 'down') scrollDirection = 'prev';
 
       scroller[scrollDirection]();
     },
