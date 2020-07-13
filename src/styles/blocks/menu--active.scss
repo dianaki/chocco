@@ -1,4 +1,4 @@
-.menu--fixed {
+.mobile__menu {
   opacity: 0;
   transition: all .5s, linear .3s;
   display: flex;
@@ -24,11 +24,10 @@
     fill: #ffffff;
   }
 }
-
-.menu--active {
-  visibility: visible;
-  opacity: 1;
-  bottom: 0;
+.mobile__menu--active {
+visibility: visible;
+opacity: 1;
+bottom: 0;
   
   .menu__list {
     flex-direction: column;
@@ -49,3 +48,4 @@
     visibility: visible;
   }
 }
+

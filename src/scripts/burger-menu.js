@@ -5,15 +5,15 @@ const menuList = document.querySelector('#menu__list');
 
 openMenu.addEventListener('click', function(event){
  event.preventDefault();
- menuContent.classList.add('menu--active');
+ menuContent.classList.add('mobile__menu--active');
 })
 
 closeMenu.addEventListener('click', function (event){
   event.preventDefault();
-  menuContent.classList.remove('menu--active');
+  menuContent.classList.remove('mobile__menu--active');
 })
 
 menuList.addEventListener('click', function (event){
   event.preventDefault();
-  menuContent.classList.remove('menu--active');
+  menuContent.classList.remove('mobile__menu--active');
 })
