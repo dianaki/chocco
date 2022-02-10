@@ -38,7 +38,7 @@
     "gulp-svgo": "^2.2.1",
     "gulp-uglify": "^3.0.2",
     "i": "^0.3.6",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
